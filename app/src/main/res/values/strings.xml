@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CodingTest</string>
+    <string name="add_user">Add User</string>
+    <string name="user_list">User List</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="no_user_found">No User Found</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="submit">Submit</string>
+    <string name="name_title">Name :</string>
+    <string name="address_title">Address :</string>
+    <string name="phone_title">Phone :</string>
+    <string name="email_title">Email :</string>
+</resources>

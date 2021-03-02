@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="2dp"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="@string/dashboard"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addUserBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add_user"
+        android:textAllCaps="false"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/userListBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbarLayout"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/userListBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/user_list"
+        android:textAllCaps="false"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        app:cornerRadius="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addUserBtn"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
